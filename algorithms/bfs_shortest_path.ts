@@ -2,7 +2,7 @@
   function bfs_shortest_path(
     graph: number[][],
     v: number,
-    visited,
+    visited: boolean[],
     pathLengths: number[]
   ) {
     const queue = [v];

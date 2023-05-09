@@ -1,5 +1,5 @@
 {
-  function bfs(graph: number[][], v: number, visited) {
+  function bfs(graph: number[][], v: number, visited: boolean[]) {
     const queue = [v];
     visited[v] = true;
 
