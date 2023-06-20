@@ -24,3 +24,38 @@ function solution(k: number, dungeons: [number, number][]) {
 
   return answer;
 }
+
+// test
+
+// case 1
+console.log(
+  solution(80, [
+    [80, 20],
+    [50, 40],
+    [30, 10],
+  ])
+); // answer : 3
+
+// case 2
+console.log(
+  solution(40, [
+    [40, 20],
+    [10, 10],
+    [10, 10],
+    [10, 10],
+    [10, 10],
+  ])
+); // answer : 4
+
+// case 3
+console.log(
+  solution(100, [
+    [100, 1],
+    [99, 1],
+    [99, 1],
+    [99, 1],
+    [99, 1],
+    [99, 1],
+    [99, 1],
+  ])
+); // answer : 2
