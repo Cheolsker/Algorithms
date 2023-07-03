@@ -44,11 +44,7 @@ function solution(maps: string[]) {
     }
   }
 
-  if (answer.length > 0) {
-    return answer.sort((a, b) => a - b);
-  }
-
-  return [-1];
+  return answer.length ? answer.sort((a, b) => a - b) : [-1];
 }
 
 console.log(solution(["X591X", "X1X5X", "X231X", "1XXX1"])); // [1,1,27]
