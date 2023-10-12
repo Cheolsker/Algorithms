@@ -6,12 +6,22 @@
   function insertion_sort(arr: number[], order: "asc" | "desc") {
     for (let i = 1; i < arr.length; i++) {
       for (let j = i; j >= 1; j--) {
-        if (order === "asc" && arr[j - 1] > arr[j]) {
-          [arr[j], arr[j - 1]] = [arr[j - 1], arr[j]];
+        if (order === "asc") {
+          if (arr[j - 1] > arr[j]) {
+            [arr[j], arr[j - 1]] = [arr[j - 1], arr[j]];
+            continue;
+          }
+
+          break;
         }
 
-        if (order === "desc" && arr[j - 1] < arr[j]) {
-          [arr[j], arr[j - 1]] = [arr[j - 1], arr[j]];
+        if (order === "desc") {
+          if (arr[j - 1] < arr[j]) {
+            [arr[j], arr[j - 1]] = [arr[j - 1], arr[j]];
+            continue;
+          }
+
+          break;
         }
       }
     }
