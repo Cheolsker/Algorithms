@@ -1,8 +1,4 @@
 {
-  const TIME = "TIME";
-  let arr = [-11, 2, 10, 5, 0, 7];
-
-  // for 문을 이용
   function insertion_sort(arr: number[], order: "asc" | "desc") {
     for (let i = 1; i < arr.length; i++) {
       for (let j = i; j >= 1; j--) {
@@ -26,6 +22,9 @@
       }
     }
   }
+
+  const TIME = "TIME";
+  let arr = [-11, 2, 10, 5, 0, 7];
 
   // 오름차순 정렬 테스트
   console.time(TIME + 1);
