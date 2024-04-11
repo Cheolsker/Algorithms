@@ -1,5 +1,5 @@
 {
-  function binary_search(array: number[], target: number) {
+  function binarySearch(array: number[], target: number) {
     let left = 0;
     let right = array.length - 1;
 
@@ -15,5 +15,5 @@
   const array = [1, 2, 3, 4, 5, 6, 7, 8];
   const target = 4;
 
-  console.log(binary_search(array, target));
+  console.log(binarySearch(array, target));
 }
