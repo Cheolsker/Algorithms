@@ -10,3 +10,7 @@
 [#35 Search Insert Position (Easy)](https://github.com/CheolWoongChoi/Algorithms/issues/11)
 
 [#278 First Bad Version (Easy)](https://github.com/CheolWoongChoi/Algorithms/issues/12)
+
+
+## Stack
+[#71 Simplify Path (Stack, Medium)](https://github.com/CheolWoongChoi/Algorithms/issues/17)
