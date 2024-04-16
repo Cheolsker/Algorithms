@@ -1,32 +1,31 @@
 {
   function longestPalindrome(s: string): string {
-    let answer = s[0];
+    let answer = "";
 
     for (let i = 0; i < s.length; i++) {
-      let left = i;
-      let right = s.length - 1;
-      let last = undefined;
+      // 홀수 문자열일 때, 가장 긴 회문을 구함
+      let l = i,
+        r = i;
 
-      while (left <= right) {
-        if (s[left] === s[right]) {
-          if (!last) last = right;
-          left++;
-          right--;
-        } else {
-          if (last) {
-            left = i;
-            right = last;
-            last = undefined;
-          }
-
-          right--;
+      while (l >= 0 && r < s.length && s[l] === s[r]) {
+        if (r - l + 1 > answer.length) {
+          answer = s.slice(l, r + 1);
         }
+
+        l--;
+        r++;
       }
 
-      if (s[left] === s[right] && last) {
-        const target = s.slice(i, last + 1);
+      // 짝수 문자열일 때, 가장 긴 회문을 구함
+      (l = i), (r = i + 1);
 
-        if (target.length > answer.length) answer = target;
+      while (l >= 0 && r < s.length && s[l] === s[r]) {
+        if (r - l + 1 > answer.length) {
+          answer = s.slice(l, r + 1);
+        }
+
+        l--;
+        r++;
       }
     }
 
