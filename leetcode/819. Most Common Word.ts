@@ -3,7 +3,7 @@
     let answer = "";
     let cnt = 0;
 
-    const newParagraph = paragraph.replace(/[^a-zA-Z\s]/g, " ").toLowerCase();
+    const newParagraph = paragraph.replace(/\W+/g, " ").toLowerCase();
     const paragraphs = newParagraph.split(" ").filter((v) => v);
     const map = new Map();
 
