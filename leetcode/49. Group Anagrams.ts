@@ -1,23 +1,18 @@
 {
   function groupAnagrams(strs: string[]): string[][] {
-    const answer = [];
     const map = new Map<string, string[]>();
 
     for (const word of strs) {
       const sortedWord = word.split("").sort().join("");
 
-      if (map.has(sortedWord)) {
-        map.set(sortedWord, [...(map.get(sortedWord) || []), word]);
-      } else {
-        map.set(sortedWord, [word]);
+      if (!map.has(sortedWord)) {
+        map.set(sortedWord, []);
       }
+
+      (map.get(sortedWord) as string[]).push(word);
     }
 
-    for (const [_, value] of map) {
-      answer.push(value);
-    }
-
-    return answer;
+    return Array.from(map.values());
   }
 
   /**
