@@ -14,6 +14,10 @@
 [#49 Group Anagrams (Medium)](https://github.com/CheolWoongChoi/Algorithms/issues/23)
 
 
+## Array
+[#1. Two Sum (Easy)](https://github.com/CheolWoongChoi/Algorithms/issues/24)
+
+
 ## Sorting
 [#15. 3Sum (Medium)](https://github.com/CheolWoongChoi/Algorithms/issues/15)
 
