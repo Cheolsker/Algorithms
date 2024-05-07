@@ -17,6 +17,9 @@
 ## Array
 [#1. Two Sum (Easy)](https://github.com/CheolWoongChoi/Algorithms/issues/24)
 
+[#42 Trapping Rain Water (Array, Hard)](https://github.com/CheolWoongChoi/Algorithms/issues/25)
+
+[#561 Array Partition (Array, Easy)](https://github.com/CheolWoongChoi/Algorithms/issues/26)
 
 ## Sorting
 [#15. 3Sum (Medium)](https://github.com/CheolWoongChoi/Algorithms/issues/15)
