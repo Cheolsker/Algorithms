@@ -37,3 +37,8 @@ export function maxProfit2(prices: number[]): number {
 
   return profit;
 }
+
+// idx 0 1 2 3 4 5
+// val 7,1,5,3,6,4
+// max 6 6 6 6 4 4
+// pro 5 5 3 3 0 0
