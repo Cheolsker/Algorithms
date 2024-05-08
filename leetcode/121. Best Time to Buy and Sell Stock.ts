@@ -5,15 +5,15 @@
  * 시간복잡도 : O(N^2)
  */
 export function maxProfit1(prices: number[]): number {
-  let max = 0;
+  let profit = 0;
 
   for (let i = 0; i < prices.length - 1; i++) {
     for (let j = i + 1; j < prices.length; j++) {
-      max = Math.max(prices[j] - prices[i], max);
+      profit = Math.max(prices[j] - prices[i], profit);
     }
   }
 
-  return max;
+  return profit;
 }
 
 /**
