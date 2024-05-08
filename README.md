@@ -21,6 +21,11 @@
 
 [#561 Array Partition (Array, Easy)](https://github.com/CheolWoongChoi/Algorithms/issues/26)
 
+[#238 Product of Array Except Self (Array, Medium)](https://github.com/CheolWoongChoi/Algorithms/issues/27)
+
+[#121. Best Time to Buy and Sell Stock (Array, Easy)](https://github.com/CheolWoongChoi/Algorithms/issues/28)
+
+
 ## Sorting
 [#15. 3Sum (Medium)](https://github.com/CheolWoongChoi/Algorithms/issues/15)
 
