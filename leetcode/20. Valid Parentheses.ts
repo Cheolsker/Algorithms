@@ -7,8 +7,6 @@ export function isValid(s: string): boolean {
   if (s.length % 2 === 1) return false;
 
   const stack: string[] = [];
-
-  const openBrackets = ['(', '{', '['];
   const pairs = new Map([
     [')', '('],
     ['}', '{'],
@@ -16,7 +14,7 @@ export function isValid(s: string): boolean {
   ]);
 
   for (const w of s) {
-    if (openBrackets.includes(w)) {
+    if (!pairs.has(w)) {
       stack.push(w);
     } else {
       if (pairs.get(w) !== stack.pop()) {
@@ -25,5 +23,5 @@ export function isValid(s: string): boolean {
     }
   }
 
-  return stack.length === 0 ? true : false;
+  return stack.length === 0;
 }
