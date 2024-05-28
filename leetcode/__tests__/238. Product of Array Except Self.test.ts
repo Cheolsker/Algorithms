@@ -1,4 +1,4 @@
-import { productExceptSelf } from "./238. Product of Array Except Self";
+import { productExceptSelf } from '../238. Product of Array Except Self';
 
 type Cases<NUMS, EXPECTED> = [NUMS, EXPECTED][];
 
@@ -23,16 +23,16 @@ const performanceTable: {
   best: string;
 }[] = [];
 
-describe("ProductExceptSelf", () => {
-  context("ProductExceptSelf 1", () => {
-    it.each(cases)("case %#", (nums, expected) => {
-      console.log("result", productExceptSelf(nums));
+describe('ProductExceptSelf', () => {
+  context('ProductExceptSelf 1', () => {
+    it.each(cases)('case %#', (nums, expected) => {
+      console.log('result', productExceptSelf(nums));
       expect(productExceptSelf(nums)).toEqual(expected);
     });
   });
 
-  context("performance 비교", () => {
-    it.each(cases)("case %#", (nums, expected) => {
+  context('performance 비교', () => {
+    it.each(cases)('case %#', (nums, expected) => {
       const startTime1 = performance.now();
       const result1 = productExceptSelf(nums);
       const endTime1 = performance.now();
@@ -41,14 +41,14 @@ describe("ProductExceptSelf", () => {
       let best;
       switch (Math.min(time1)) {
         case time1:
-          best = "productExceptSelf";
+          best = 'productExceptSelf';
           break;
         default:
-          best = "productExceptSelf";
+          best = 'productExceptSelf';
       }
 
       performanceTable.push({
-        input: nums.length + "개",
+        input: nums.length + '개',
         productExceptSelf: time1,
         best,
       });

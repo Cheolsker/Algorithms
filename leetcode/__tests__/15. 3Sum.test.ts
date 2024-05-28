@@ -1,4 +1,4 @@
-import { threeSum1, threeSum2 } from "./15. 3Sum";
+import { threeSum1, threeSum2 } from '../15. 3Sum';
 
 const getRandomNums = (length: number) => {
   const min = -1e5;
@@ -40,21 +40,21 @@ const performanceTable: {
   best: string;
 }[] = [];
 
-describe("3Sum", () => {
-  context("3Sum 1", () => {
-    it.each(cases)("case %#", (nums, expected) => {
+describe('3Sum', () => {
+  context('3Sum 1', () => {
+    it.each(cases)('case %#', (nums, expected) => {
       expect(threeSum1(nums)).toEqual(expect.arrayContaining(expected));
     });
   });
 
-  context("3Sum 2", () => {
-    it.each(cases)("case %#", (nums, expected) => {
+  context('3Sum 2', () => {
+    it.each(cases)('case %#', (nums, expected) => {
       expect(threeSum2(nums)).toEqual(expect.arrayContaining(expected));
     });
   });
 
-  context("performance 비교", () => {
-    it.each(cases)("case %#", (nums, expected) => {
+  context('performance 비교', () => {
+    it.each(cases)('case %#', (nums, expected) => {
       const startTime1 = performance.now();
       const result1 = threeSum1(nums);
       const endTime1 = performance.now();
@@ -68,17 +68,17 @@ describe("3Sum", () => {
       let best;
       switch (Math.min(time1, time2)) {
         case time1:
-          best = "threeSum1";
+          best = 'threeSum1';
           break;
         case time2:
-          best = "threeSum2";
+          best = 'threeSum2';
           break;
         default:
-          best = "threeSum1";
+          best = 'threeSum1';
       }
 
       performanceTable.push({
-        input: nums.length + "개",
+        input: nums.length + '개',
         threeSum1: time1,
         threeSum2: time2,
         best,

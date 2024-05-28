@@ -1,6 +1,9 @@
-import { maxProfit1, maxProfit2 } from "./121. Best Time to Buy and Sell Stock";
+import {
+  maxProfit1,
+  maxProfit2,
+} from '../121. Best Time to Buy and Sell Stock';
 
-import { getRandomNumsArray } from "./utils/nums";
+import { getRandomNumsArray } from '../utils/nums';
 
 type Cases<NUMS, EXPECTED> = [NUMS, EXPECTED][];
 
@@ -26,21 +29,21 @@ const performanceTable: {
   best: string;
 }[] = [];
 
-describe("maxProfit", () => {
-  context("maxProfit1", () => {
-    it.each(cases)("case %#", (nums, expected) => {
+describe('maxProfit', () => {
+  context('maxProfit1', () => {
+    it.each(cases)('case %#', (nums, expected) => {
       expect(maxProfit1(nums)).toEqual(expected);
     });
   });
 
-  context("maxProfit2", () => {
-    it.each(cases)("case %#", (nums, expected) => {
+  context('maxProfit2', () => {
+    it.each(cases)('case %#', (nums, expected) => {
       expect(maxProfit2(nums)).toEqual(expected);
     });
   });
 
-  context("performance 비교", () => {
-    it.each(cases)("case %#", (nums, expected) => {
+  context('performance 비교', () => {
+    it.each(cases)('case %#', (nums, expected) => {
       const startTime1 = performance.now();
       const result1 = maxProfit1(nums);
       const endTime1 = performance.now();
@@ -54,17 +57,17 @@ describe("maxProfit", () => {
       let best;
       switch (Math.min(time1, time2)) {
         case time1:
-          best = "maxProfit1";
+          best = 'maxProfit1';
           break;
         case time2:
-          best = "maxProfit2";
+          best = 'maxProfit2';
           break;
         default:
-          best = "maxProfit1";
+          best = 'maxProfit1';
       }
 
       performanceTable.push({
-        input: nums.length + "개",
+        input: nums.length + '개',
         maxProfit1: time1,
         maxProfit2: time2,
         best,

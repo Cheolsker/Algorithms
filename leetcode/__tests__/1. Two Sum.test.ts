@@ -1,4 +1,4 @@
-import { twoSum1, twoSum2, twoSum3 } from "./1. Two Sum";
+import { twoSum1, twoSum2, twoSum3 } from '../1. Two Sum';
 
 const getRandomNums = (length: number) => {
   const min = -1e9;
@@ -33,27 +33,27 @@ const performanceTable: {
   best: string;
 }[] = [];
 
-describe("Two Sum", () => {
-  context("twoSum 1", () => {
-    it.each(cases)("case %#", (nums, target, expected) => {
+describe('Two Sum', () => {
+  context('twoSum 1', () => {
+    it.each(cases)('case %#', (nums, target, expected) => {
       expect(twoSum1(nums, target)).toEqual(expect.arrayContaining(expected));
     });
   });
 
-  context("twoSum 2", () => {
-    it.each(cases)("case %#", (nums, target, expected) => {
+  context('twoSum 2', () => {
+    it.each(cases)('case %#', (nums, target, expected) => {
       expect(twoSum2(nums, target)).toEqual(expect.arrayContaining(expected));
     });
   });
 
-  context("twoSum 3", () => {
-    it.each(cases)("case %#", (nums, target, expected) => {
+  context('twoSum 3', () => {
+    it.each(cases)('case %#', (nums, target, expected) => {
       expect(twoSum3(nums, target)).toEqual(expect.arrayContaining(expected));
     });
   });
 
-  context("performance 비교", () => {
-    it.each(cases)("case %#", (nums, target, expected) => {
+  context('performance 비교', () => {
+    it.each(cases)('case %#', (nums, target, expected) => {
       const startTime1 = performance.now();
       const result1 = twoSum1(nums, target);
       const endTime1 = performance.now();
@@ -72,20 +72,20 @@ describe("Two Sum", () => {
       let best;
       switch (Math.min(time1, time2, time3)) {
         case time1:
-          best = "twoSum1";
+          best = 'twoSum1';
           break;
         case time2:
-          best = "twoSum2";
+          best = 'twoSum2';
           break;
         case time3:
-          best = "twoSum3";
+          best = 'twoSum3';
           break;
         default:
-          best = "twoSum1";
+          best = 'twoSum1';
       }
 
       performanceTable.push({
-        input: nums.length + "개",
+        input: nums.length + '개',
         twoSum1: time1,
         twoSum2: time2,
         twoSum3: time3,

@@ -1,4 +1,4 @@
-import { trap1, trap2 } from "./42. Trapping Rain Water";
+import { trap1, trap2 } from '../42. Trapping Rain Water';
 
 type Cases<NUMS, EXPECTED> = [NUMS, EXPECTED][];
 
@@ -14,21 +14,21 @@ const performanceTable: {
   best: string;
 }[] = [];
 
-describe("Trap", () => {
-  context("Trap 1", () => {
-    it.each(cases)("case %#", (nums, expected) => {
+describe('Trap', () => {
+  context('Trap 1', () => {
+    it.each(cases)('case %#', (nums, expected) => {
       expect(trap1(nums)).toEqual(expected);
     });
   });
 
-  context("Trap 2", () => {
-    it.each(cases)("case %#", (nums, expected) => {
+  context('Trap 2', () => {
+    it.each(cases)('case %#', (nums, expected) => {
       expect(trap2(nums)).toEqual(expected);
     });
   });
 
-  context("performance 비교", () => {
-    it.each(cases)("case %#", (nums, expected) => {
+  context('performance 비교', () => {
+    it.each(cases)('case %#', (nums, expected) => {
       const startTime1 = performance.now();
       const result1 = trap1(nums);
       const endTime1 = performance.now();
@@ -42,17 +42,17 @@ describe("Trap", () => {
       let best;
       switch (Math.min(time1, time2)) {
         case time1:
-          best = "trap1";
+          best = 'trap1';
           break;
         case time2:
-          best = "trap2";
+          best = 'trap2';
           break;
         default:
-          best = "trap1";
+          best = 'trap1';
       }
 
       performanceTable.push({
-        input: nums.length + "개",
+        input: nums.length + '개',
         trap1: time1,
         trap2: time2,
         best,
