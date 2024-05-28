@@ -1,6 +1,6 @@
 import { NodeItem } from './node';
 
-class Queue<T> {
+export class Queue<T> {
   front: NodeItem<T> | null;
   rear: NodeItem<T> | null;
   size: number;
@@ -39,7 +39,10 @@ class Queue<T> {
 
     if (this.length > 1) {
       const item = this.front;
-      this.front = item.next;
+      const next = item.next;
+      item.next = null;
+
+      this.front = next;
       this.length = this.length - 1;
 
       if (this.length === 1) {
@@ -55,6 +58,10 @@ class Queue<T> {
 
       return item;
     }
+  }
+
+  isEmpty() {
+    return this.length === 0;
   }
 
   traverse() {
@@ -82,28 +89,29 @@ class Queue<T> {
 /**
  * 테스트
  */
-const item1 = new NodeItem(1);
-const item2 = new NodeItem(2);
-const item3 = new NodeItem(3);
-const item4 = new NodeItem(4);
-const item5 = new NodeItem(5);
 
-const queue = new Queue(3);
+// const item1 = new NodeItem(1);
+// const item2 = new NodeItem(2);
+// const item3 = new NodeItem(3);
+// const item4 = new NodeItem(4);
+// const item5 = new NodeItem(5);
 
-queue.enqueue(item1);
-queue.enqueue(item3);
-queue.enqueue(item5);
+// const queue = new Queue(3);
 
-queue.traverse();
+// console.log(queue.isEmpty());
 
-queue.dequeue();
-queue.dequeue();
+// queue.enqueue(item1);
+// queue.enqueue(item3);
+// queue.enqueue(item5);
 
-queue.traverse();
+// queue.traverse();
 
-queue.enqueue(item4);
-queue.enqueue(item2);
+// queue.dequeue();
+// queue.dequeue();
 
-queue.traverse();
+// queue.traverse();
 
-// console.log(queue);
+// queue.enqueue(item4);
+// queue.enqueue(item2);
+
+// queue.traverse();
