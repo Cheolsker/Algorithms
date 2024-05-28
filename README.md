@@ -45,6 +45,7 @@
 
 ## Stack
 [#20. Valid Parentheses (Stack, Easy)](https://github.com/CheolWoongChoi/Algorithms/issues/36)
+[#316. Remove Duplicate Letters (Stack, Medium)](https://github.com/CheolWoongChoi/Algorithms/issues/37)
 
 
 ## Sorting
