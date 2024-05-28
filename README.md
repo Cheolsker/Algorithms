@@ -25,6 +25,7 @@
 
 [#121. Best Time to Buy and Sell Stock (Array, Easy)](https://github.com/CheolWoongChoi/Algorithms/issues/28)
 
+
 ## Linked List
 
 [#234. Palindrome Linked List (LinkedList, Easy) ](https://github.com/CheolWoongChoi/Algorithms/issues/29)
@@ -40,6 +41,10 @@
 [#328. Odd Even Linked List (LinkedList, Medium)](https://github.com/CheolWoongChoi/Algorithms/issues/34)
 
 [#92. Reverse Linked List (LinkedList, Medium)](https://github.com/CheolWoongChoi/Algorithms/issues/35)
+
+
+## Stack
+[#20. Valid Parentheses (Stack, Easy)](https://github.com/CheolWoongChoi/Algorithms/issues/36)
 
 
 ## Sorting
