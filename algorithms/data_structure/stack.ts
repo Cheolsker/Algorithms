@@ -1,6 +1,6 @@
 import { NodeItem } from './node';
 
-class Stack<T> {
+export class Stack<T> {
   top: NodeItem<T> | null;
   size: number;
   length: number;
@@ -36,11 +36,20 @@ class Stack<T> {
     if (this.top) {
       const item = this.top;
       this.top = item.next;
-
+      this.length = this.length - 1;
       return item;
     } else {
+      this.length = 0;
       return null;
     }
+  }
+
+  peek() {
+    return this.top;
+  }
+
+  isEmpty() {
+    return this.length === 0;
   }
 
   traverse() {
