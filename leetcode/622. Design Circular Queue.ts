@@ -70,7 +70,7 @@ class MyCircularQueue1 {
  * 제거할 값의 위치를 front가 가리키고 있음
  *
  */
-class MyCircularQueue2 {
+export class MyCircularQueue2 {
   q: number[] = [];
   front: number;
   rear: number;
