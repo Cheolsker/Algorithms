@@ -25,7 +25,7 @@
       let min = new ListNode(10e4 + 1);
       let minIdx = -1;
 
-      // 리스트들을 돌면서, 가장 작은 리스트 노드 (min)를 찾음, O(1)
+      // 리스트들을 돌면서, 가장 작은 리스트 노드 (min)를 찾음, O(N)
       for (let i = 0; i < lists.length; i++) {
         if (lists[i] && lists[i].val <= min.val) {
           min = lists[i];
