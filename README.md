@@ -72,6 +72,7 @@
 
 
 ## Hash Map
+[#771. Jewels ans Stones (HashMap, Easy)](https://github.com/CheolWoongChoi/Algorithms/issues/46)
 
 
 ## Sorting
