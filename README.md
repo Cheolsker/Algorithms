@@ -50,6 +50,8 @@
 
 [#739. Daily Temperatures (Stack, Medium)](https://github.com/CheolWoongChoi/Algorithms/issues/38)
 
+[#71 Simplify Path (Stack, Medium)](https://github.com/CheolWoongChoi/Algorithms/issues/17)
+
 
 ## Queue
 [#225. Implement Stack using Queues (Queue, Easy)](https://github.com/CheolWoongChoi/Algorithms/issues/39)
@@ -57,6 +59,19 @@
 [#232. Implement Queue using Stacks (Queue, Easy)](https://github.com/CheolWoongChoi/Algorithms/issues/40)
 
 [#622. Design Circular Queue. (Queue, Medium)](https://github.com/CheolWoongChoi/Algorithms/issues/41)
+
+
+## Deque
+[#641. Design Circular Deque. (Deque, Medium)](https://github.com/CheolWoongChoi/Algorithms/issues/42)
+
+
+## Priority Queue
+[#973. K Closest Points to Origin (Priority Queue, Medium)](https://github.com/CheolWoongChoi/Algorithms/issues/44)
+
+[#23. Merge k Sorted Lists (Priority Queue, Hard)](https://github.com/CheolWoongChoi/Algorithms/issues/45)
+
+
+## Hash Map
 
 
 ## Sorting
@@ -74,6 +89,3 @@
 
 [#278 First Bad Version (Easy)](https://github.com/CheolWoongChoi/Algorithms/issues/12)
 
-
-## Stack
-[#71 Simplify Path (Stack, Medium)](https://github.com/CheolWoongChoi/Algorithms/issues/17)
