@@ -74,6 +74,14 @@
 ## Hash Map
 [#771. Jewels ans Stones (HashMap, Easy)](https://github.com/CheolWoongChoi/Algorithms/issues/46)
 
+[#706. Design HashMap (HashMap, Easy)](https://github.com/CheolWoongChoi/Algorithms/issues/47)
+
+[#3. Longest Substring Without Repeating Characters (HashMap, Medium)](https://github.com/CheolWoongChoi/Algorithms/issues/48)
+
+[#347. Top K Frequent Elements (HashMap, Medium)](https://github.com/CheolWoongChoi/Algorithms/issues/49)
+
+[[프로그래머스] LV1 완주하지 못한 선수](https://github.com/CheolWoongChoi/Algorithms/issues/50)
+  
 
 ## Sorting
 [#15. 3Sum (Medium)](https://github.com/CheolWoongChoi/Algorithms/issues/15)
